@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  ![React](https://img.shields.io/badge/React-2023-blue?logo=react&style=for-the-badge) ![Recharts](https://img.shields.io/badge/Recharts-DataViz-blue?logo=databricks&style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+  <img src="https://img.shields.io/badge/React-2023-blue?logo=react&style=for-the-badge" alt="React" /> <img src="https://img.shields.io/badge/Recharts-DataViz-blue?logo=databricks&style=for-the-badge" alt="Recharts" /> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </div>
 
 منصة **NeuroScan** الطبية هي واجهة تشخيص تفاعلية مبنية في React مخصصة لعرض إحصائيات الكشف عن أورام الدماغ ومتابعة سجل الفحوصات الطبية للمرضى عبر إحصائيات بصرية دقيقة.
