@@ -1,80 +1,70 @@
-# 💻 Neuroscan Brain Tumor Detection Platform React
+# NeuroScan: Diagnostic platform & Brain Tumor Telemetry Dashboard
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:0f172a&height=160&section=header&text=Neuroscan%20Brain%20Tumor%20Detection%20Platform%20React&fontSize=42&fontColor=38bdf8&fontFamily=Outfit" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:0369a1&height=160&section=header&text=NeuroScan%20Platform&fontSize=42&fontColor=ffffff&fontFamily=Outfit" width="100%" />
 </div>
 
 <div align="center">
-  ![React](https://img.shields.io/badge/React-2023-blue?logo=react&style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+  ![React](https://img.shields.io/badge/React-2023-blue?logo=react&style=for-the-badge) ![Recharts](https://img.shields.io/badge/Recharts-DataViz-blue?logo=databricks&style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 </div>
 
----
+منصة **NeuroScan** الطبية هي واجهة تشخيص تفاعلية مبنية في React مخصصة لعرض إحصائيات الكشف عن أورام الدماغ ومتابعة سجل الفحوصات الطبية للمرضى عبر إحصائيات بصرية دقيقة.
 
-## 📌 Project Overview (Description)
-A healthcare React web application designed to showcase brain tumor detection telemetry and scans.
-
-This codebase represents professional software development practices, clean module organization, and efficient code architectures tailored for high responsiveness and scalability.
+This repository holds the React frontend client and diagnostic telemetry interface for the **NeuroScan Tumor Detection Platform**. Built using Recharts to present diagnostic statistics.
 
 ---
 
-## ⚡ The Engineering Challenge
+## 🧬 Diagnostic Telemetry Flow
 
-### 🔴 Problem
-Developers building web solutions face difficulties handling state synchronization, styling inconsistencies, and complex configurations that clutter logic and trigger UI slowdowns or connection lifecycle failures.
+The platform handles scan parsing and renders charts dynamically:
 
-### 🟢 Solution
-This project implements:
-* **Separation of Concerns**: Structured module layouts separating design assets from operational logic.
-* **Optimized Rendering**: Efficient script logic and CSS layout variables to maintain lightweight UI paint times.
-* **Structured Coding Standards**: Written using clean semantic patterns ensuring readable code maintainability.
+```mermaid
+graph TD
+    Analyst[Medical Analyst] -->|Upload scan details| Controller[React Diagnostics Controller]
+    Controller -->|Parse tumor coordinates & metrics| Parser[Scan Analytics Engine]
+    Parser -->|Render sizing trends| Chart[Recharts Line/Bar Graphs]
+    Parser -->|Format report| Report[Printable Diagnostic Report]
+```
 
 ---
 
-## 🧬 System Architecture
-The internal layout structures are separated logically:
+## 🧬 UI Features & Modules
+
+1.  **Diagnostics Telemetry Panel**: Custom charts presenting tumor sizes, growth timelines, and scans history.
+2.  **Patients Database View**: List index sorting active scan reports.
+3.  **Analytics Grid**: Interactive Recharts components detailing scan telemetry.
+
+---
+
+## 🛠️ Technology Stack & Assets
+
+*   **Library**: **React 18** + **Vite**.
+*   **Data Viz**: **Recharts** charting components.
+*   **Styling**: High-contrast, clean interfaces built for medical systems.
+
+---
+
+## 📂 Repository Module Layout
+
 ```text
 neuroscan-brain-tumor-detection-platform-react/
-├── css/ or styles/      # Styling engines and layouts
-├── js/ or src/          # Source scripts and business logic
-├── index.html or app.js # Operational entry point
+├── src/
+│   ├── components/      # PatientList, TelemetryCharts, DiagnosticReport
+│   ├── App.jsx          # Platform layout controller
+│   └── main.jsx         # Render entry point
+├── package.json         # Node metadata
 └── README.md            # System documentation
 ```
 
 ---
 
-## 🛠️ Technology Stack
-
-| Technology | Purpose |
-| :--- | :--- |
-| React | UI Component Library |
-| Vite | Frontend Development & Bundling |
-
----
-
-## 🚀 Local Developer Setup & Run
-
-### 📋 Prerequisites
-* Modern web browser / Node.js runtime (depending on project stack)
-
-### ⚙️ Quick Start Steps
+## ⚡ Local Setup & Run
 ```bash
-    git clone https://github.com/Sayed-Herzallah/neuroscan-brain-tumor-detection-platform-react.git
-    cd neuroscan-brain-tumor-detection-platform-react
-    # Open index.html in any modern browser, or run local server:
-    python -m http.server 8080
+git clone https://github.com/Sayed-Herzallah/neuroscan-brain-tumor-detection-platform-react.git
+cd neuroscan-brain-tumor-detection-platform-react
+npm install
+npm run dev
 ```
-
----
-
-## 🔮 Future Improvements
-* [ ] Integrate automated unit testing.
-* [ ] Add dynamic dark/light theme switcher.
-* [ ] Improve responsiveness on extra-small mobile screen viewports.
-
----
-
-## 👥 Contributors
-* **Sayed Herzallah** - Lead Developer & Systems Architect
 
 ---
 
